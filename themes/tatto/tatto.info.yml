@@ -1,0 +1,21 @@
+name: Tatto
+type: theme
+base theme: classy
+description: 'A theme in dedication to the drawings on your body.'
+core_version_requirement: ^8 || ^9
+libraries:
+- core/normalize
+- tatto/global
+regions:
+  header: 'Header'
+  primary_menu: 'Primary menu'
+  secondary_menu: 'Secondary menu'
+  highlighted: 'Highlighted'
+  help: 'Help'
+  content: 'Content'
+  sidebar_first: 'Left sidebar'
+  sidebar_second: 'Right sidebar'
+  footer: 'Footer'
+  breadcrumb: 'Breadcrumb'
+  page_top: 'Page top'
+  page_bottom: 'Page bottom'
