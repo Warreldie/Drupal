@@ -1,0 +1,12 @@
+<?php
+
+/**
+ * Implements hook_theme().
+ */
+function thomas_more_social_media_theme($existing, $type, $theme, $path) {
+  return [
+    'social-media' => [
+      'variables' => ['test_var' => NULL],
+    ],
+  ];
+}

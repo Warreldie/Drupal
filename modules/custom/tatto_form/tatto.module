@@ -1,0 +1,11 @@
+<?php
+/**
+ * Implements hook_theme().
+ */
+function tatto_form_theme($existing, $type, $theme, $path) {
+  return [
+    'my-form' => [
+      'variables' => ['test_var' => NULL],
+    ],
+  ];
+}

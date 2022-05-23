@@ -14,14 +14,28 @@ use Drupal\Core\Block\BlockBase;
  * )
  */
 class TestBlock extends BlockBase {
+ /**
+   * {@inheritdoc}
+   */
+  public function defaultConfiguration() {
+    return ['label_display' => FALSE];
+  }
 
   /**
    * {@inheritdoc}
    */
   public function build() {
-    return [
-      '#markup' => 'Test',
+    $renderable = [
+      '#theme' => 'social-media',
+      '#test_var' => 'test variable',
+      '#attached' => [
+        'library' => [
+          'thomas_more_social_media/thomas_more_social_media.libraries.yml',
+        ],
+      ],
     ];
+
+    return $renderable;
   }
 
 }

@@ -1,0 +1,6 @@
+henna:
+  version: 1.x
+  css:
+    css/henna.css: {}
+  js:
+    js/henna.js: {}

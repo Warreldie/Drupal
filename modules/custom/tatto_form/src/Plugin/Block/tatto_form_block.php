@@ -14,14 +14,33 @@ use Drupal\Core\Block\BlockBase;
  * )
  */
 class TestBlock extends BlockBase {
+    /**
+   * {@inheritdoc}
+   */
+  public function defaultConfiguration() {
+    return ['label_display' => FALSE];
+  }
 
   /**
    * {@inheritdoc}
    */
   public function build() {
+    /*
     return [
       '#markup' => 'Test',
     ];
+    */
+    $renderable = [
+      '#theme' => 'my-form',
+      '#test_var' => 'test variable',
+      '#attached' => [
+        'library' => [
+          'tatto_form/tatto_form.libraries.yml',
+        ],
+      ],
+    ];
+
+    return $renderable;
   }
 
 }
