@@ -11,7 +11,19 @@
     Drupal.behaviors.awesome = {
         attach: function(context, settings) {
             $(document).ready(function() {
-                window.alert("The page is loaded!");
+                window.alert("Welocome in our tattooshop!");
+            });
+            // Activate Carousel
+            $("#myCarousel").carousel();
+
+            // Enable Carousel Indicators
+            $(".item").click(function() {
+                $("#myCarousel").carousel(1);
+            });
+
+            // Enable Carousel Controls
+            $(".left").click(function() {
+                $("#myCarousel").carousel("prev");
             });
         }
     };
