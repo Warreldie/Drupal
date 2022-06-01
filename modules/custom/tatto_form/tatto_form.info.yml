@@ -1,5 +1,5 @@
 type: module
 name: Tatto Form
-description: A form for tatto customers.
+description: 'A form for tatto customers.'
 core: 8.x
 package: Tatto

@@ -28,18 +28,16 @@ img {
     padding-right: 1rem;
 }
 
-.region-highlighted {}
-
-.my-menu {
+#block-tatto-mainmenu .my-menu {
     margin-top: 25px;
     float: right;
 }
 
-.my-menu li {
+#block-tatto-mainmenu .my-menu li {
     float: left;
 }
 
-.my-menu a {
+#block-tatto-mainmenu .my-menu a {
     color: black;
     display: block;
     text-decoration: none;

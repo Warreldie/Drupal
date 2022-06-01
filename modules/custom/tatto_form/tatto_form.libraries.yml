@@ -2,6 +2,9 @@ henna:
   version: 1.x
   css:
     component:
-      css/henna.css: {}
+      'https://use.fontawesome.com/releases/v5.5.0/css/all.css': { type: external }
+      assets/css/henna.css: {}
   js:
-    js/henna.js: {}
+    assets/js/henna.js: {}
+    dependencies:
+    - core/jquery

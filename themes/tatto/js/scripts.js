@@ -11,7 +11,7 @@
     Drupal.behaviors.awesome = {
         attach: function(context, settings) {
             $(document).ready(function() {
-                window.alert("Welocome in our tattooshop!");
+                window.alert("Welcome in our tattooshop!");
             });
             // Activate Carousel
             $("#myCarousel").carousel();

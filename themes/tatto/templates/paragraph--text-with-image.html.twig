@@ -53,10 +53,10 @@
   <div>
     {% block content %}
     <div class="row">
-      <div class="column col-md-6 col-image>
+      <div class="column col-md-6 col-image">
         {{ content.field_media_image }}
       </div>
-      <div class="column col-md-6 col-text>
+      <div class="column col-md-6 col-text">
         {{ content|without('field_media_image') }}
       </div>
     </div>
